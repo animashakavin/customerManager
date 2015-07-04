@@ -101,6 +101,7 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.2.3</version>
+				<serverId>docker-hub</serverId>
 				<configuration>
 					<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
 					<dockerDirectory>src/main/docker</dockerDirectory>
@@ -111,8 +112,7 @@
 						</resource>
 					</resources>
 					<serverId>docker-hub</serverId>
-					<registryUrl>https://registry.hub.docker.com</registryUrl>
-				</configuration>
+					</configuration>
 			</plugin>
 		</plugins>
 	</build>
