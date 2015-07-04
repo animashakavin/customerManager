@@ -16,7 +16,7 @@
 		<version>1.2.3.RELEASE</version>
 	</parent>
 	<properties>
-    	<docker.image.prefix>springio</docker.image.prefix>
+    	<docker.image.prefix>animashakavin</docker.image.prefix>
         <java.version>1.7</java.version>
     </properties>
 
@@ -75,7 +75,7 @@
 
 	<organization>
 		<name>Gogo</name>
-		<url>http://www.gogoair.com</url>
+		<url>http://abcd</url>
 	</organization>
 
 	<!--*********************************************************************** -->

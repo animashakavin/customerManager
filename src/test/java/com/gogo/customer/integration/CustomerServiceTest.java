@@ -78,7 +78,7 @@ public class CustomerServiceTest {
 	public void testCreatCustomerJSONP() throws Exception{
 		
 		try {
-			StringBuffer url = new StringBuffer("http://video.gogoinflight.com:9000/customer/post/jsonp?callback=myfunction&customer=");
+			StringBuffer url = new StringBuffer("http://127.0.0.1:9000/customer/post/jsonp?callback=myfunction&customer=");
 			url.append(URLEncoder.encode(customer.toString()));
 			
 			System.out.println("URL -->"+url.toString());
@@ -97,7 +97,7 @@ public class CustomerServiceTest {
 	
 	@Test
 	public void testShowCustmers() throws Exception {
-		StringBuffer url = new StringBuffer("http://video.gogoinflight.com:9000/customer/get/");
+		StringBuffer url = new StringBuffer("http://127.0.0.1:9000/customer/get/");
 		ResponseEntity<Set> response =  restTemplate.getForEntity(url.toString(),Set.class);
 		Assert.assertNotNull(response);
 		Assert.assertEquals(response.getBody().size(),1);
