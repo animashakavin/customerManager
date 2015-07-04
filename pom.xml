@@ -5,7 +5,7 @@
 	<!-- Parent project -->
 	<!--*********************************************************************** -->
 	<groupId>com.gogo</groupId>
-	<artifactId>customerManager</artifactId>
+	<artifactId>customermanager</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<name>Gogo </name>
